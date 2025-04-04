@@ -20,7 +20,7 @@ function handleGuess() {
   } else {
     attemptsLeft--;
     if (attemptsLeft > 0) {
-      displayMessage(`Incorrect guess. You have ${attemptsLeft} attempts left. Try again!`);
+      displayMessage(`❌ Incorrect guess. You have ${attemptsLeft} attempts left. Try again!`);
     } else {
       displayMessage(`💀 Game over! The secret word was '${secretWord}'.`, 'lose');
       endGame(false);
